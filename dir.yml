@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Ansible Shell module creation
+    command: touch sabc.txt
+    args: 
+      chdir: /root/ansible
+      creates: qabc.txt
